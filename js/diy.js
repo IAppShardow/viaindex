@@ -7,7 +7,7 @@ if(!L.mnu||JSON.parse(L.mnu)[0][1]<3.5)L.setItem('mnu',JSON.stringify([["dta",3.
 if(!L.bok||L.bok=='[]')L.setItem('bok',JSON.stringify([["百度","https://m.baidu.com/?pu=sz%401321_480","img/baidu.png"],["谷歌","https://www.google.com.hk/?gws_rd=ssl","img/google.png"],["酷安","https://www.coolapk.com/","img/cool.png"],["乐回享","https://8lhx.com/","img/echooit.png"],["more","http://leftshine.gitee.io/viaindex/","img/more.png"]]))
 var B=JSON.parse(L.bok),C=JSON.parse(L.mnu),D=E=F=T=1
 for(var a='',b=0;b<B.length;b++)a+='<li><div class="sc"></div><div class="bq" style="background-image:url('+B[b][2]+')" msg="'+B[b][1]+'"></div><p>'+B[b][0]+'</p></li>'
-$('#book').html(a+'<li class="mark"><div class="tj" style="background-image:url(img/mark.png)"></div><p>添加书签</p></li>'),style(0)
+$('#book').html(a+'<li class="mark"><div class="tj" style="background-image:url(img/mark.png)"></div><p>添加书签</p></li>'),$('#book').html(''),style(0)
 
 $.fn.longPress=function(a){var b=void 0,c=this;for(d=c.length;d>0;d--)
 c[d-1].addEventListener('touchstart',function(){b=setTimeout(a,700)},!1),
